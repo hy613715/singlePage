@@ -25,7 +25,11 @@ const routes = [
     },
     {
         path: '/time-entries',
-        component: TimeEntries
+        component: TimeEntries,
+        children:[{
+            path: 'log-time',
+            component: resolev => require(['./components/LogTime.vue'],resolev)
+        }]
     }
 ];
 
@@ -37,6 +41,7 @@ const router = new VueRouter({
 var app = new Vue({
   el: '#app',
   router,
+  store,
   template: '<App/>',
   components: { App }
 })
