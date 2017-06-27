@@ -8,6 +8,9 @@ import App from './App'
 import Home from './components/Home'
 import 'bootstrap/dist/css/bootstrap.css'
 
+import store from './store'
+import TimeEntries from './components/TimeEntries.vue'
+
 Vue.use(VueRouter)
 Vue.use(VueResource)
 
@@ -19,6 +22,10 @@ const routes = [
     {
         path: '/home',
         component: Home
+    },
+    {
+        path: '/time-entries',
+        component: TimeEntries
     }
 ];
 
