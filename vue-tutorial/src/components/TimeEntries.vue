@@ -70,8 +70,18 @@
         methods: {
             deletePlan(idx){
                 this.$store.dispatch('decTotalTime',this.plans[idx].totalTime)
-                this.$store.disPatch('deletePlan',idx)
+                this.$store.dispatch('deletePlan',idx)
             }
         }
+
+
+        // methods: {
+        //   deletePlan(idx) {
+        //       // 稍后再来说这里的方法 // 减去总时间
+        //     this.$store.dispatch('decTotalTime', this.plans[idx].totalTime) // 删除该计划
+        //     this.$store.dispatch('deletePlan', idx)
+        //   }
+        // }
+
     }
 </script>

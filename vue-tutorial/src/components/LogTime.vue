@@ -27,7 +27,7 @@
         name: 'LogTime',
         data(){
             return {
-                data: '',
+                date: '',
                 totalTime: '',
                 comment: ''
             }
