@@ -70,7 +70,7 @@
         methods: {
             deletePlan(idx){
                 this.$store.dispatch('decTotalTime',this.plans[idx].totalTime)
-                this.$store.disPatch('deletePlan',idx)
+                this.$store.dispatch('deletePlan',idx)
             }
         }
     }

@@ -27,7 +27,7 @@
         name: 'LogTime',
         data(){
             return {
-                data: '',
+                date: '',
                 totalTime: '',
                 comment: ''
             }
@@ -37,7 +37,7 @@
                 const plan = {
                     name: '曹双梅',
                     image: 'https://sfault-avatar.b0.upaiyun.com/888/223/888223038-5646dbc28d530_huge256',
-                    data: this.date,
+                    date: this.date,
                     totalTime: this.totalTime,
                     comment: this.comment
                 };
